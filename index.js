@@ -23,9 +23,9 @@ class Hero {
             default:
                 attack = 'unknown attack';
         }
-        console.log(`The ${this.type} attacked using ${attack}`);
+        return `The ${this.type} attacked using ${attack}`;
     }
 }
 
 let hero = new Hero('Javier', 'monk', 18);
-hero.attack();  
+console.log(hero.attack());
